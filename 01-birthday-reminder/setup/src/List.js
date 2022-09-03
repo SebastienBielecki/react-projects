@@ -1,9 +1,16 @@
 import React from 'react';
 
-const List = () => {
+const List = ({age, name, id, image}) => {
   return (
     <>
-      <h2>list component</h2>
+      <div className='person'>
+        <img src={image} />
+        <div>
+        <h4>{name}</h4>
+        <p>{age} years</p>
+        </div>
+        
+      </div>
     </>
   );
 };
